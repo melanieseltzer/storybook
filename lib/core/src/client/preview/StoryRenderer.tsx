@@ -23,20 +23,31 @@ type Layout = keyof typeof layouts;
 
 const layouts = {
   centered: {
+    margin: 0,
+    padding: '1rem',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     minHeight: '100vh',
-    margin: 0,
-    padding: '1rem',
     boxSizing: 'border-box',
   },
   fullscreen: {
     margin: 0,
+    padding: 'inherit',
+    display: 'inherit',
+    justifyContent: 'inherit',
+    alignItems: 'inherit',
+    minHeight: 'inherit',
+    boxSizing: 'inherit',
   },
   padded: {
     margin: 0,
     padding: '1rem',
+    display: 'inherit',
+    justifyContent: 'inherit',
+    alignItems: 'inherit',
+    minHeight: 'inherit',
+    boxSizing: 'inherit',
   },
 } as const;
 
